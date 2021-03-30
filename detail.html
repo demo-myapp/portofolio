@@ -48,21 +48,15 @@
         </div>
         <div class="row justify-content-center fs-5">
             <div class="col-md-6 text-center">
-                <img src="img/pict.PNG" class="card-img-top" alt="Projects">
+                <img id="img" class="card-img-top" alt="Projects">
             </div>
             <div class="col-md-6">
-                <p>Bridestory merupakan web yang didesain untuk perusahaan wedding organizer. Proyek front-end yang dibangun menggunakan HTML, CSS, dan javascript. Terdiri dari 12 halaman dengan layout dan fungsi yang berbeda-beda. Dikerjakan oleh 5 orang dengan sistem pembagian per halaman. Beberapa halaman yang saya buat antara lain testimoni, gallery, invitation, about us, sign up, dan sign in.</p>
+                <p id="detail"></p>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="fas fa-code pe-2" style="color:rgb(100, 100, 241)"></i>An item</li>
+                    <li class="list-group-item"><i class="fas fa-code pe-2" style="color:rgb(100, 100, 241)"></i><span id="code"></span></li>
                     <!-- <li class="list-group-item">A second item</li>
                     <li class="list-group-item">A third item</li> -->
                   </ul>
-                  <div class="">
-                    <div class="d-grid gap-2 col-md-4 mx-auto">
-                        <a target="_blank" href="https://rizqi-hakim.github.io/bridestory.github.io/index.html" class="btn btn-primary btn-sm">Demo</a>
-                        <a target="_blank" href="https://rizqi-hakim.github.io/bridestory.github.io/index.html" class="btn btn-primary btn-sm">Demo</a>
-                      </div>
-                  </div>
             </div>
         </div>
         </div>
@@ -70,11 +64,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -83,6 +72,39 @@
         
         if(getId == 'bridestory'){
             document.getElementById('nama').innerHTML = 'Bridestory';
+            document.getElementById('img').src = "img/bridestory.png";
+            document.getElementById('detail').innerHTML = 'Bridestory merupakan web yang didesain untuk perusahaan wedding organizer. Terdiri dari 12 halaman dengan layout dan fungsi yang berbeda-beda. Dikerjakan oleh 5 orang dengan sistem pembagian per halaman. Beberapa halaman yang saya buat antara lain testimoni, gallery, invitation, about us, sign up, dan sign in.';
+            document.getElementById('code').innerHTML = 'HTML, CSS, dan javascript';
+        } else if(getId == 'sekolahmu'){
+            document.getElementById('nama').innerHTML = 'Sekolahmu';
+            document.getElementById('img').src = "img/sekolahmu.jpeg";
+            document.getElementById('detail').innerHTML = "Sekolahmu merupakan web yang didesian untuk sistem informasi sekolah. Terdiri dari 20 halaman dan mempunyai fungsi sesuai dengan judulnya. Dikerjakan oleh 4 orang dengan sistem pembagian per halaman. Beberapa halaman yang saya buat antara lain guru, agenda, event, pengumuman, dan layout.";
+            document.getElementById('code').innerHTML = "bootstrap, HTML, PHP, CSS, JavaScript, MySQL";
+        } else if(getId == 'hostel'){
+            document.getElementById('nama').innerHTML = 'Hostel';
+            document.getElementById('img').src = "img/hostel.png";
+            document.getElementById('detail').innerHTML = "Hostel merupakan web yang didesain untuk sistem reservasi hotel. Terdiri dari 2 sub bagian yaitu home dan dashboard. Dikerjakan oleh 2 orang dengan sistem pembagian perbagian. Bagian yang saya buat yaitu pada bagian home yang berisi halaman utama, pencarian hotel, detail hotel, tinjau pesanan, API yandex maps, dan about. Semua ketentuan dan bebas request dari client. ";
+            document.getElementById('code').innerHTML = "AdminLTE, HTML, CSS, Javascript";
+        } else if(getId == 'shepygo'){
+            document.getElementById('nama').innerHTML = 'Shepygo';
+            document.getElementById('img').src = "img/shepygo.png";
+            document.getElementById('detail').innerHTML = "Shepygo merupakan web sistem pakar untuk diagnosa penyakit sapi dengan metode certainty factor. Full editable untuk pakar agar dapat meningkatkan keakuratan sistem.";
+            document.getElementById('code').innerHTML = "AdminLTE, PHP, MySQL, Javascript, HTML, CSS";
+        } else if(getId == 'ruangilmu'){
+            document.getElementById('nama').innerHTML = 'Ruang Ilmu';
+            document.getElementById('img').src = "img/ruangilmu.png";
+            document.getElementById('detail').innerHTML = "Ruang Ilmu merupakan web online course dilengkapi dengan sistem referal. Tak hanya digunakan untuk belajar, pengguna juga dapat mendapatkan uang dari hasil referal yang dapat di pantau di dashboard masing-masing. Dibangun menggunakan Laravel 7. Terinspirasi dari project yang tidak selesai pada magang amikom center sebelumnya.";
+            document.getElementById('code').innerHTML = "Laravel 7, MySQL";
+        } else if(getId == 'ewarung'){
+            document.getElementById('nama').innerHTML = 'E Warung';
+            document.getElementById('img').src = "img/ewarung.png";
+            document.getElementById('detail').innerHTML = "E-warung merupakan web pemesanan makanan online. Pengunjung warung dapat melihat menu dan memesan secara online melalui web sebelum datang ke tempat. Fitur pengembangan selanjutnya menambahkan fasilitas penyimpanan saldo agar pengunjung lebih mudah dalam pembayarannya.";
+            document.getElementById('code').innerHTML = "PHP, MySQL";
+        } else if(getId == 'printing'){
+            document.getElementById('nama').innerHTML = 'Printing Queue';
+            document.getElementById('img').src = "img/printing.png";
+            document.getElementById('detail').innerHTML = "Merupakan website percetakan untuk mengantri secara online. Pengunjung juga dapat mengecek apakah pesanannya sudah selesai atau belum. Terinspirasi dari salah satu percetakan di Tulungagung yang masih menerapkan antrian menggunakan whatsapp";
+            document.getElementById('code').innerHTML = "CodeIgniter 4, MySQL";
         } else {
             alert('ID Tidak Di Temukan');
             window.location.replace("/");
