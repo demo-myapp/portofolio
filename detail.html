@@ -110,6 +110,11 @@
             document.getElementById('img').src = "img/printing.PNG";
             document.getElementById('detail').innerHTML = "Merupakan website percetakan untuk mengantri secara online. Pengunjung juga dapat mengecek apakah pesanannya sudah selesai atau belum. Terinspirasi dari salah satu percetakan di Tulungagung yang masih menerapkan antrian menggunakan whatsapp";
             document.getElementById('code').innerHTML = "CodeIgniter 4, MySQL";
+        } else if(getId == 'bookapi'){
+            document.getElementById('nama').innerHTML = 'Book API';
+            document.getElementById('img').src = "img/bookapi.jpg";
+            document.getElementById('detail').innerHTML = "API pencatatan buku";
+            document.getElementById('code').innerHTML = "Hapi Framework, NodeJS";
         } else {
             alert('ID Tidak Di Temukan');
             window.location.replace("/");
